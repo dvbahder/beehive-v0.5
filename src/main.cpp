@@ -3,18 +3,18 @@
  * Date 08-03-2020
  * Application ID beehive-001-dvb
  * Device ID beehive01
+ * - die LEDs dienen nur der Anzeige im Test, sie sollten entweder ausgeschaltet oder garnicht verbaut werden
  * 
  * ToDo
- * - verwendete Wägezelle eichen, 
- * - deepslepp einbauen
+ * - verwendete Wägezelle eichen, damit beim Einschalten des Nodes sofort das Gewicht (ohne Tarieren) angezeigt wird
+ * - DeepSleep einbauen
+ * 
  *******************************************************************************/
 #include <Arduino.h>
 #include <lmic.h>
 #include <hal/hal.h>
 #include <SPI.h>
 #include <Wire.h>
-//#include <Adafruit_GFX.h>
-//#include <Adafruit_SSD1306.h>
 #include <math.h>
 
 //--- define ---
@@ -59,8 +59,8 @@ float T2 = 24.5;
 float Temperatur[2] = {999.99,999.99};
 
 //---Konfiguration TTN------------
-static const PROGMEM u1_t NWKSKEY[16] = { 0x1F, 0x1F, 0xE3, 0xD6, 0x9E, 0xDF, 0xA7, 0x31, 0xAC, 0xCE, 0xD2, 0xED, 0x76, 0x7D, 0x51, 0xCE } ;
-static const u1_t PROGMEM APPSKEY[16] = { 0x1F, 0x1F, 0x1F, 0xF9, 0xC0, 0xA0, 0xA3, 0x60, 0x9F, 0x9B, 0x94, 0x80, 0xF1, 0x45, 0x0A, 0x8B } ;
+static const PROGMEM u1_t NWKSKEY[16] = { 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F } ;
+static const u1_t PROGMEM APPSKEY[16] = { 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F } ;
 static const u4_t DEVADDR = 0x261FFFFF;
 // 
 void os_getArtEui (u1_t* buf) { }
