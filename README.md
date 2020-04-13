@@ -24,3 +24,5 @@ Teile:
 - ggf. S7V8F3 step-up/step-down Spannungsregler
 - Widerstände 4K7, 320K
 - Lochrasterplatte 70x50mm, passende Steckleisten, Drähte, Lötzubehör
+
+![Übersicht](/img/ue.jpg)
