@@ -5,9 +5,12 @@ Stand 04-2020
 Das Projekt soll den Bau einer Waage ermöglichen, die unter einen Bienenstock gestellt wird.
 Die gewonnen Daten (Gewicht, Temperatur...) geben Informationen, anhand derer die Bienen mit weniger und dafür gezielten Eingriffen bewirtschaftet werden können.
 
-Das Vorgängerprojekt hatte einen NodeMCUV2.0 mit WLAN - Anbindung verbaut. Das aktuelle Projekt soll die Anbindung per LoRaWAN ermöglichen. Dafür muss ein LoRaWAN-Gateway in Reichweite sein. 
+Das Vorgängerprojekt hatte einen NodeMCUV2.0 mit WLAN - Anbindung verbaut. Das aktuelle Projekt soll die Anbindung per LoRaWAN ermöglichen.
+- es muss ein LoRaWAN-Gateway in Reichweite sein
+- ein TTN Account ist erforderlich, eine App und die Schlüssel müssen nutzbar sein
 
 Rückfragen dauern etwas länger, da das Projekt ausschließlich als Hobby in Freizeit entsteht.
+Viel Freude beim Probieren!
 
 Teile:
 - WEMOS D1 (ESP8266)
