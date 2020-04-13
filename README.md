@@ -1,6 +1,6 @@
-# beehive-v0.5
-# Stand 04-2020
-Bienenwaage (experimentell)
+beehive-v0.5
+Stand 04-2020
+# Bienenwaage (experimentell)
 
 Das Projekt soll den Bau einer Waage ermöglichen, die unter einen Bienenstock gestellt wird.
 Die gewonnen Daten (Gewicht, Temperatur...) geben Informationen, anhand derer die Bienen mit weniger und dafür gezielten Eingriffen bewirtschaftet werden können.
