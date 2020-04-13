@@ -26,3 +26,7 @@ Teile:
 - Lochrasterplatte 70x50mm, passende Steckleisten, Drähte, Lötzubehör
 
 ![Übersicht](/img/ue.jpg)
+
+Die Daten werden üder MQTT von TTN abgeholt und Lokal (Synology NAS DS218+ mit Docker-Containern) verarbeitet
+-> MQTT (TTN) -> NodeRed (umarbeiten für INFLUX-DB) - speichern in INFLUX-DB -> Anzeige in GRAFANA DashBoards
+ToDo: abholen über HTTP-Integration von TTN in Webspace (Hoster mit mySQL), Anzeige  z.B. mit 
